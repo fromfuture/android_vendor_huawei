@@ -20,10 +20,7 @@ PRODUCT_PACKAGES += \
     HwMMITest \
     HwSarControlService \
     ims \
-    qcrilmsgtunnel \
-    SetupSmartDeviceOverlay \
-    TimeService \
-    Tycho 
+    Tycho
 
 # Prebuilt jars
 PRODUCT_PACKAGES += \
@@ -37,14 +34,14 @@ PRODUCT_PACKAGES += \
     DCMO \
     DiagMon \
     DMService \
-    GCS \
     HiddenMenu \
     HotwordEnrollment \
+    qcrilmsgtunnel \
     SprintDM
 
 # Symlinks
 PRODUCT_PACKAGES += \
-    libimsmedia_jni.so \
+	libimsmedia_jni.so \
     libimscamera_jni.so \
     libdmengine.so \
     libdmjavaplugin.so \
