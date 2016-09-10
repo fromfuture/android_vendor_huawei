@@ -16,23 +16,6 @@ LOCAL_PATH := $(call my-dir)
 ifeq ($(TARGET_DEVICE),angler)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := libManufacture.so
-LOCAL_MODULE_CLASS := FAKE
-LOCAL_MODULE_TAGS := optional
-LOCAL_MULTILIB := both
-include $(BUILD_SYSTEM)/base_rules.mk
-$(LOCAL_BUILT_MODULE): TARGET := /lib64/libManufacture.so
-$(LOCAL_BUILT_MODULE): SYMLINK := $(TARGET_OUT)/app/HwMMITest/lib/arm64/$(LOCAL_MODULE)
-$(LOCAL_BUILT_MODULE):
-	$(hide) echo "Symlink: $(SYMLINK) -> $(TARGET)"
-	$(hide) mkdir -p $(dir $@)
-	$(hide) mkdir -p $(dir $(SYMLINK))
-	$(hide) rm -rf $@
-	$(hide) rm -rf $(SYMLINK)
-	$(hide) ln -sf $(TARGET) $(SYMLINK)
-	$(hide) touch $@
-
-include $(CLEAR_VARS)
 LOCAL_MODULE := libimsmedia_jni.so
 LOCAL_MODULE_CLASS := FAKE
 LOCAL_MODULE_TAGS := optional

@@ -16,33 +16,10 @@ $(call inherit-product, vendor/huawei/angler/angler-vendor-blobs.mk)
 
 # Prebuilt APKs
 PRODUCT_PACKAGES += \
-    CABLService \
-    HwMMITest \
-    HwSarControlService \
     ims \
     Tycho
-
-# Prebuilt jars
-PRODUCT_PACKAGES += \
-    qcrilhook
-
-# Prebuilt privileged APKs
-PRODUCT_PACKAGES += \
-    CallStatistics \
-    CNEService \
-    ConnMO \
-    DCMO \
-    DiagMon \
-    DMService \
-    HiddenMenu \
-    HotwordEnrollment \
-    qcrilmsgtunnel \
-    SprintDM
 
 # Symlinks
 PRODUCT_PACKAGES += \
 	libimsmedia_jni.so \
     libimscamera_jni.so \
-    libdmengine.so \
-    libdmjavaplugin.so \
-    libManufacture.so
